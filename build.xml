@@ -1,0 +1,110 @@
+<project name="Mangad" basedir="." default="run">
+  <property name="src_dir" value="src"/>
+  <property name="pkg_dir" value="it/gzc/caculli/mangad"/>
+  <property name="lib_dir" value="misc/libs"/>
+  <property name="doc_dir" value="doc"/>
+  <property name="build_dir" value="build"/>
+  <property name="test_dir" value="test"/>
+  <property name="pkg_name" value="it.gzc.caculli.mangad"/>
+  <property name="main_class" value="Mangad"/>
+  <property name="jar_file" value="mangad.jar"/>
+
+  <path id="project.class.path">
+    <pathelement location="${lib_dir}/gson-2.8.6.jar"/>
+    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.base.jar"/>
+    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.controls.jar"/>
+    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.fxml.jar"/>
+    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.graphics.jar"/>
+    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.media.jar"/>
+    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.swing.jar"/>
+    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx-swt.jar"/>
+    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.web.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-jupiter-5.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-jupiter-api-5.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-jupiter-engine-5.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-jupiter-migrationsupport-5.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-jupiter-params-5.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-commons-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-console-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-console-standalone-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-engine-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-jfr-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-launcher-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-reporting-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-runner-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-suite-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-suite-api-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-suite-commons-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-suite-engine-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-platform-testkit-1.8.1.jar"/>
+    <pathelement location="${lib_dir}/junit/junit-vintage-engine-5.8.1.jar"/>
+    <pathelement path="${build_dir}"/>
+  </path>
+
+  <pathconvert targetos="unix" pathsep=" " property="project_class_path" refid="project.class.path"/>
+  <pathconvert targetos="windows" pathsep=";" property="project_class_path" refid="project.class.path"/>
+
+  <target name="help">
+  </target>
+
+  <target name="clean">
+    <delete dir="${doc_dir}"/>
+    <delete dir="${build_dir}"/>
+    <delete dir="${test_dir}"/>
+    <delete file="${jar_file}"/>
+  </target>
+
+  <target name="doc">
+  </target>
+
+  <target name="build">
+    <delete dir="${build_dir}"/>
+    <mkdir dir="${build_dir}"/>
+    <copy todir="${build_dir}">
+      <fileset dir="${src_dir}">
+        <exclude name="**/*.java"/>
+      </fileset>
+    </copy>
+    <copy todir="${basedir}">
+      <fileset dir="${src_dir}">
+        <exclude name="**/*.java"/>
+      </fileset>
+    </copy>
+
+    <javac destdir="${build_dir}" srcdir="${src_dir}" sourcepath="${src_dir}"
+           includeantruntime="false" source="11" target="11" debug="true"
+           modulepath="${lib_dir}/javafx-sdk-11.0.2/lib">
+      <classpath refid="project.class.path"/>
+    </javac>
+  </target>
+
+  <target name="test" depends="build">
+    <delete dir="${test_dir}"/>
+    <mkdir dir="${test_dir}"/>
+  </target>
+
+  <target name="jar" depends="test">
+    <delete file="${jar_file}"/>
+    <jar destfile="${jar_file}">
+      <fileset dir="${build_dir}"/>
+      <manifest>
+        <attribute name="Built-By" value="Giorgio Caculli"/>
+        <attribute name="Class-Path" value="${project_class_path}"/>
+        <attribute name="Codebase" value="https://gzc.caculli.it/project/mangad"/>
+        <attribute name="Implementation-Title" value="${ant.project.title}"/>
+        <attribute name="Implementation-Vendor" value="A Giorgio Caculli Production"/>
+        <attribute name="Implementation-Version" value="1.0"/>
+        <attribute name="Main-Class" value="${pkg_name}.${main_class}"/>
+        <attribute name="Permissions" value="sandbox"/>
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="run" depends="jar">
+    <java jar="${jar_file}" fork="true" modulepath="${lib_dir}/javafx-sdk-11.0.2/lib">
+      <classpath refid="project.class.path"/>
+      <jvmarg value="--add-modules"/>
+      <jvmarg value="ALL-MODULE-PATH"/>
+    </java>
+  </target>
+</project>
