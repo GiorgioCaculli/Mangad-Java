@@ -1,24 +1,16 @@
 <project name="Mangad" basedir="." default="run">
   <property name="src_dir" value="src"/>
-  <property name="pkg_dir" value="it/gzc/caculli/mangad"/>
+  <property name="pkg_dir" value="it/caculli/gzc/mangad"/>
   <property name="lib_dir" value="misc/libs"/>
   <property name="doc_dir" value="doc"/>
   <property name="build_dir" value="build"/>
   <property name="test_dir" value="test"/>
-  <property name="pkg_name" value="it.gzc.caculli.mangad"/>
+  <property name="pkg_name" value="it.caculli.gzc.mangad"/>
   <property name="main_class" value="Mangad"/>
   <property name="jar_file" value="mangad.jar"/>
 
   <path id="project.class.path">
     <pathelement location="${lib_dir}/gson-2.8.6.jar"/>
-    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.base.jar"/>
-    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.controls.jar"/>
-    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.fxml.jar"/>
-    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.graphics.jar"/>
-    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.media.jar"/>
-    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.swing.jar"/>
-    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx-swt.jar"/>
-    <pathelement location="${lib_dir}/javafx-sdk-11.0.2/lib/javafx.web.jar"/>
     <pathelement location="${lib_dir}/junit/junit-jupiter-5.8.1.jar"/>
     <pathelement location="${lib_dir}/junit/junit-jupiter-api-5.8.1.jar"/>
     <pathelement location="${lib_dir}/junit/junit-jupiter-engine-5.8.1.jar"/>
@@ -101,10 +93,8 @@
   </target>
 
   <target name="run" depends="jar">
-    <java jar="${jar_file}" fork="true" modulepath="${lib_dir}/javafx-sdk-11.0.2/lib">
+    <java jar="${jar_file}" fork="true">
       <classpath refid="project.class.path"/>
-      <jvmarg value="--add-modules"/>
-      <jvmarg value="ALL-MODULE-PATH"/>
     </java>
   </target>
 </project>
