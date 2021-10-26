@@ -11,6 +11,6 @@ public class MainPanel extends JPanel implements GUIInterface
         setLayout( new BorderLayout() );
         CARDS.add( new MenuPanel(), CARD_MENU_PANEL );
         CARD_LAYOUT.show( CARDS, CARD_MENU_PANEL );
-        add( CARDS );
+        add( CARDS, BorderLayout.CENTER );
     }
 }

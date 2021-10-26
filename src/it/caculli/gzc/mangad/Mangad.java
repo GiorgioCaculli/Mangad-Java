@@ -12,7 +12,7 @@ public class Mangad
     {
         System.out.println( "Mangad by Giorgio Caculli" );
 
-        Author author1 = new Author( "", "", LocalDate.of( 1996, 12, 1 ) );
+        Author author1 = new Author( "Giorgio", "Caculli", LocalDate.of( 1996, 12, 1 ) );
 
         System.out.println( author1 );
 

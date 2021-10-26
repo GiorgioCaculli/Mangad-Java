@@ -2,33 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec8d570f-74fb-4e64-bc0f-1b6fbe728bbb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/Mangad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/anime/Animated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/anime/Anime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/lightnovel/LightNovel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/manga/MangaSeries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/person/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/GUIInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/Mangad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/core/Anime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/core/CoreInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/core/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/core/LightNovel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/core/Manga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/manga/Manga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/core/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/core/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/core/Series.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/gui/AboutFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/AboutFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/gui/GUIInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/gui/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/MainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/gui/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/MenuPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/gui/TopMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/TopMenuBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/test/LibraryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/test/LibraryTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/test/MangaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/test/MangaTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/gzc/caculli/mangad/test/SeriesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/test/SeriesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/Mangad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/Mangad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/MainPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/TopMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/TopMenuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_it.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_it.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_ja.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_ja.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +78,8 @@
       <option name="presentableId" value="Default" />
       <updated>1635190456983</updated>
       <workItem from="1635190458213" duration="4713000" />
+      <workItem from="1635195235877" duration="62000" />
+      <workItem from="1635261846826" duration="2971000" />
     </task>
     <servers />
   </component>
@@ -112,5 +96,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
