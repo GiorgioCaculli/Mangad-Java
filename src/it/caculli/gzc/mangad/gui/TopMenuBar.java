@@ -5,7 +5,6 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
-import javax.swing.JToolBar;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -77,7 +76,7 @@ public class TopMenuBar extends JMenuBar implements GUIInterface
             public void actionPerformed( ActionEvent e )
             {
                 int confirm = JOptionPane.showConfirmDialog( getComponent(), "Are you sure you want to quit?", "Quit Program?", JOptionPane.YES_NO_OPTION );
-                if( confirm == JOptionPane.YES_OPTION )
+                if ( confirm == JOptionPane.YES_OPTION )
                 {
                     ( ( Window ) getRootPane().getParent() ).dispose();
                 }

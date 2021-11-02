@@ -1,8 +1,7 @@
 package it.caculli.gzc.mangad.gui;
 
-import java.awt.BorderLayout;
-
 import javax.swing.JPanel;
+import java.awt.BorderLayout;
 
 public class MainPanel extends JPanel implements GUIInterface
 {

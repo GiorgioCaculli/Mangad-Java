@@ -2,9 +2,8 @@ package it.caculli.gzc.mangad.gui;
 
 import it.caculli.gzc.mangad.core.ICoreValues;
 
-import java.awt.CardLayout;
-
 import javax.swing.JPanel;
+import java.awt.CardLayout;
 
 public interface GUIInterface extends ICoreValues
 {

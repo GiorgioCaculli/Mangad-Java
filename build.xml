@@ -57,12 +57,11 @@
         <exclude name="**/*.java"/>
       </fileset>
     </copy>
-    <copy todir="${basedir}">
+    <copy todir="${build_dir}">
       <fileset dir="${src_dir}">
         <exclude name="**/*.java"/>
       </fileset>
     </copy>
-
     <javac destdir="${build_dir}" srcdir="${src_dir}" sourcepath="${src_dir}"
            includeantruntime="false" source="11" target="11" debug="true"
            modulepath="${lib_dir}/javafx-sdk-11.0.2/lib">
@@ -73,6 +72,16 @@
   <target name="test" depends="build">
     <delete dir="${test_dir}"/>
     <mkdir dir="${test_dir}"/>
+    <junitlauncher haltonfailure="true" printsummary="true">
+      <classpath refid="project.class.path"/>
+      <testclasses outputdir="${test_dir}" haltonfailure="true">
+        <fileset dir="${build_dir}">
+          <include name="**/*Test*.class"/>
+        </fileset>
+        <listener type="legacy-xml" sendsysout="true" sendsyserr="true"/>
+        <listener type="legacy-plain" sendsysout="true"/>
+      </testclasses>
+    </junitlauncher>
   </target>
 
   <target name="jar" depends="test">

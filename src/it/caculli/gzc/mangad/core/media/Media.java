@@ -8,8 +8,8 @@ import java.util.List;
 public abstract class Media implements IMedia
 {
     private String title;
-    private List< String > titleAlternatives;
-    private List< IPerson > authors;
+    private final List< String > titleAlternatives;
+    private final List< IPerson > authors;
 
     public Media( String title )
     {
@@ -41,7 +41,7 @@ public abstract class Media implements IMedia
     @Override
     public boolean equals( Object o )
     {
-        if( o instanceof Media )
+        if ( o instanceof Media )
         {
             Media tmp = ( Media ) o;
             return tmp.title.equalsIgnoreCase( title );
@@ -55,12 +55,12 @@ public abstract class Media implements IMedia
         StringBuilder sb = new StringBuilder();
         sb.append( String.format( "Title: %s", title ) ).append( LINE_SEPARATOR );
         sb.append( "Alternative titles:" ).append( LINE_SEPARATOR );
-        for( String titleAlternative : titleAlternatives )
+        for ( String titleAlternative : titleAlternatives )
         {
             sb.append( titleAlternative ).append( LINE_SEPARATOR );
         }
         sb.append( "Authors:" ).append( LINE_SEPARATOR );
-        for( IPerson author : authors )
+        for ( IPerson author : authors )
         {
             sb.append( author ).append( LINE_SEPARATOR );
         }

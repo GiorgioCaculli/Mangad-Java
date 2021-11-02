@@ -2,15 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec8d570f-74fb-4e64-bc0f-1b6fbe728bbb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/animated/Animated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/animated/IAnimated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/animated/ISeason.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/animated/Season.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/textual/ISeries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/textual/ITextual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/textual/Volume.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/Mangad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/Mangad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/IMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/IMedia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/Season.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/Series.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/textual/Series.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/anime/Animated.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/anime/AnimatedSeason.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/animated/AnimatedSeason.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/anime/Anime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/animated/Anime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/anime/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/animated/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/lightnovel/LightNovel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/textual/lightnovel/LightNovel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/lightnovel/LightNovelSeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/textual/lightnovel/LightNovelSeries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/manga/Manga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/textual/manga/Manga.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/manga/MangaSeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/media/textual/manga/MangaSeries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/person/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/person/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/person/IPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/person/IPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/core/person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/AboutFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/AboutFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/GUIInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/GUIInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/MainPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/TopMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/gui/TopMenuBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_it.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_it.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_ja.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/res/strings_ja.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/test/LibraryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/test/LibraryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/test/MangaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/test/MangaTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/test/SeriesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/caculli/gzc/mangad/test/SeriesTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +49,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Interface" />
       </list>
     </option>
@@ -39,6 +66,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -46,9 +77,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SeriesTests">
     <configuration name="Mangad" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="it.caculli.gzc.mangad.Mangad" />
       <module name="Mangad-Java" />
@@ -62,9 +93,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MangaTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mangad-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.caculli.gzc.mangad.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.caculli.gzc.mangad.test" />
+      <option name="MAIN_CLASS_NAME" value="it.caculli.gzc.mangad.test.MangaTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeriesTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mangad-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.caculli.gzc.mangad.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.caculli.gzc.mangad.test" />
+      <option name="MAIN_CLASS_NAME" value="it.caculli.gzc.mangad.test.SeriesTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SeriesTests" />
         <item itemvalue="Application.Mangad" />
+        <item itemvalue="JUnit.MangaTests" />
         <item itemvalue="Application.Mangad" />
       </list>
     </recent_temporary>
@@ -80,6 +143,10 @@
       <workItem from="1635190458213" duration="4713000" />
       <workItem from="1635195235877" duration="62000" />
       <workItem from="1635261846826" duration="2971000" />
+      <workItem from="1635316202052" duration="5342000" />
+      <workItem from="1635705725241" duration="9109000" />
+      <workItem from="1635758384459" duration="12491000" />
+      <workItem from="1635845346858" duration="11318000" />
     </task>
     <servers />
   </component>

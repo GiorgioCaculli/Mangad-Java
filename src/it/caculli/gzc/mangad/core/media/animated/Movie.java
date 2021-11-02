@@ -1,8 +1,8 @@
-package it.caculli.gzc.mangad.core.media.anime;
+package it.caculli.gzc.mangad.core.media.animated;
 
 import java.io.Serializable;
 
-public class Movie extends AnimatedSeason implements Animated, Serializable
+public class Movie extends Animated implements Serializable
 {
     public Movie( String title )
     {

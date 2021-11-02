@@ -14,7 +14,7 @@ public class Author extends Person implements Serializable
     public Author clone()
     {
         Author tmpAuthor = new Author( getFirstName(), getLastName(), getBirthDate() );
-        for( int i = 0; i < getMedias().size(); i++ )
+        for ( int i = 0; i < getMedias().size(); i++ )
         {
             tmpAuthor.addMedia( getMedias().get( i ).clone() );
         }

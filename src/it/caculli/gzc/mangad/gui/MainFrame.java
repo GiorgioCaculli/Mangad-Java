@@ -1,14 +1,13 @@
 package it.caculli.gzc.mangad.gui;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import java.awt.BorderLayout;
 import java.awt.Window;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowListener;
 import java.awt.event.WindowStateListener;
-
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 
 public class MainFrame extends JFrame implements WindowFocusListener, WindowListener, WindowStateListener
 {
@@ -46,7 +45,7 @@ public class MainFrame extends JFrame implements WindowFocusListener, WindowList
     public void windowClosing( WindowEvent e )
     {
         int confirm = JOptionPane.showConfirmDialog( getRootPane(), "Are you sure you want to quit?", "Quit Program?", JOptionPane.YES_NO_OPTION );
-        if( confirm == JOptionPane.YES_OPTION )
+        if ( confirm == JOptionPane.YES_OPTION )
         {
             ( ( Window ) getRootPane().getParent() ).dispose();
         }

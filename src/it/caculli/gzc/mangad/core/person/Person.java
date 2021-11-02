@@ -1,6 +1,5 @@
 package it.caculli.gzc.mangad.core.person;
 
-import it.caculli.gzc.mangad.core.media.IMedia;
 import it.caculli.gzc.mangad.core.media.Media;
 
 import java.time.LocalDate;
@@ -12,7 +11,7 @@ public abstract class Person implements IPerson
     private String firstName, lastName;
     private LocalDate birthDate;
     private int age;
-    private List< IMedia > medias;
+    private final List< Media > medias;
 
     public Person( String firstName, String lastName, LocalDate birthDate )
     {
@@ -63,24 +62,24 @@ public abstract class Person implements IPerson
     }
 
     @Override
-    public boolean addMedia( IMedia media )
+    public boolean addMedia( Media media )
     {
         return medias.add( media );
     }
 
     @Override
-    public boolean removeMedia( IMedia media )
+    public boolean removeMedia( Media media )
     {
         return medias.remove( media );
     }
 
     @Override
-    public List< IMedia > getMedias()
+    public List< Media > getMedias()
     {
-        List< IMedia > tmpMedias = new ArrayList<>();
-        for( int i = 0; i < medias.size(); i++ )
+        List< Media > tmpMedias = new ArrayList<>();
+        for ( int i = 0; i < medias.size(); i++ )
         {
-            Media tmpMedia = ( Media ) medias.get( i );
+            Media tmpMedia = medias.get( i );
             tmpMedias.add( tmpMedia.clone() );
         }
         return tmpMedias;
@@ -89,7 +88,7 @@ public abstract class Person implements IPerson
     @Override
     public boolean equals( Object o )
     {
-        if( o instanceof Person )
+        if ( o instanceof Person )
         {
             Person tmpPerson = ( Person ) o;
             return firstName.equalsIgnoreCase( tmpPerson.firstName ) &&
@@ -123,9 +122,9 @@ public abstract class Person implements IPerson
         );
         sb.append( birthDateString );
         sb.append( RESOURCE_BUNDLE.getString( "person_medias" ) ).append( LINE_SEPARATOR );
-        for( int i = 0; i < medias.size(); i++ )
+        for ( int i = 0; i < medias.size(); i++ )
         {
-            Media media = ( Media ) medias.get( i );
+            Media media = medias.get( i );
             sb.append( media );
         }
         return sb.toString();
